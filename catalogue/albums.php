@@ -39,13 +39,13 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Catalogue <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="compositeurs.html">Compositeurs</a></li>
-                        <li><a href="albums.html">Albums</a></li>
-                        <li><a href="enregistrements.html">Enregistrements</a></li>
+                        <li><a href="compositeurs.php">Compositeurs</a></li>
+                        <li class="active"><a href="albums.php">Albums</a></li>
+                        <li><a href="enregistrements.php">Enregistrements</a></li>
                     </ul>
                 </li>
                 <li><a href="#contact">A propos</a></li>
@@ -84,7 +84,7 @@
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5">
-            <img class="featurette-image img-responsive" src="img/lion.png" alt="Generic placeholder image">
+            <img class="featurette-image img-responsive" src="../img/lion.png" alt="Generic placeholder image">
         </div>
     </div>
 
@@ -92,7 +92,7 @@
 
     <div class="row featurette">
         <div class="col-md-5">
-            <img class="featurette-image img-responsive" src="img/test.png" alt="Generic placeholder image">
+            <img class="featurette-image img-responsive" src="../img/test.png" alt="Generic placeholder image">
         </div>
         <div class="col-md-7">
             <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
@@ -108,7 +108,7 @@
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5">
-            <img class="featurette-image img-responsive" src="img/lion.png" alt="Generic placeholder image">
+            <img class="featurette-image img-responsive" src="../img/lion.png" alt="Generic placeholder image">
         </div>
     </div>
 
@@ -125,6 +125,6 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
