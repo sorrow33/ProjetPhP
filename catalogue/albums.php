@@ -44,11 +44,11 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Catalogue <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="compositeurs.php">Compositeurs</a></li>
-                        <li class="active"><a href="albums.php">Albums</a></li>
+                        <li  class="active"><a href="albums.php">Albums</a></li>
                         <li><a href="enregistrements.php">Enregistrements</a></li>
                     </ul>
                 </li>
-                <li><a href="#contact">A propos</a></li>
+                <li><a href="../contact/about.php">A propos</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Membres</a></li>

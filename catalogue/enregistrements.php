@@ -39,7 +39,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Catalogue <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
@@ -48,7 +48,7 @@
                         <li class="active"><a href="enregistrements.php">Enregistrements</a></li>
                     </ul>
                 </li>
-                <li><a href="#contact">A propos</a></li>
+                <li><a href="../contact/about.php">A propos</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Membres</a></li>
