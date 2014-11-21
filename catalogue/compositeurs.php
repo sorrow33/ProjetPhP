@@ -90,6 +90,24 @@
         if (!empty($_POST['compositeur'])) {
             $compositeur = $_POST['compositeur'];
             echo "Vous avez choisi la lettre : $compositeur <br>";
+            // Paramètres de connexion
+            $driver = 'sqlsrv';
+            $host = 'INFO-SIMPLET';
+            $nomDb = 'Classique';
+            $user = 'ETD';
+            $password = 'ETD';
+            // Chaîne de connexion
+            $pdodsn = "$driver:Server=$host;Database=$nomDb";
+            // Connexion PDO
+            $pdo = new PDO($pdodsn, $user, $password);
+            $requete = "select distinct(Nom_Musicien)
+from Musicien
+inner join Composer on Musicien.Code_Musicien = Composer.Code_Musicien
+where Musicien.Code_Musicien = Composer.Code_Musicien and Musicien.Nom_Musicien like '$compositeur%' ";
+            foreach ($pdo->query($requete) as $row) {
+                echo 'Nom : ' . $row['Nom_Musicien']. "<br>";
+            }
+            $pdo = null;
         }
         ?>
     </div>
