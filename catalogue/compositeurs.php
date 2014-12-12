@@ -101,9 +101,9 @@
             // Connexion PDO
             $pdo = new PDO($pdodsn, $user, $password);
             $requete = "select distinct(Nom_Musicien)
-from Musicien
-inner join Composer on Musicien.Code_Musicien = Composer.Code_Musicien
-where Musicien.Code_Musicien = Composer.Code_Musicien and Musicien.Nom_Musicien like '$compositeur%' ";
+                        from Musicien
+                        inner join Composer on Musicien.Code_Musicien = Composer.Code_Musicien
+                        where Musicien.Code_Musicien = Composer.Code_Musicien and Musicien.Nom_Musicien like '$compositeur%' ";
             foreach ($pdo->query($requete) as $row) {
                 echo 'Nom : ' . $row['Nom_Musicien']. "<br>";
             }
