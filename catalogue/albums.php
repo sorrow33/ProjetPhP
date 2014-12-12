@@ -88,10 +88,26 @@
             <input name="Envoyer" class="btn btn-sm btn-default" type="submit" value="Envoyer">
         </form>
         <?php
-        /*include 'connexionPDO.php';
-        $requete = "Select Titre_Album from Album";
-        connexionPDO($requete);
-        */?>
+            if (!empty($_POST['album'])) {
+                $album = $_POST['album'];
+                echo "Vous avez choisi la lettre : $album <br>";
+                // Paramètres de connexion
+                $driver = 'sqlsrv';
+                $host = 'INFO-SIMPLET';
+                $nomDb = 'Classique';
+                $user = 'ETD';
+                $password = 'ETD';
+                // Chaîne de connexion
+                $pdodsn = "$driver:Server=$host;Database=$nomDb";
+                // Connexion PDO
+                $pdo = new PDO($pdodsn, $user, $password);
+                $requete = "SELECT Titre_Album From Album WHERE Titre_Album LIKE '$album%'";
+                foreach ($pdo->query($requete) as $row) {
+                    echo 'Nom : ' . $row['Titre_Album']. "<br>";
+                }
+                $pdo = null;
+            }
+        ?>
     </div>
     </div>
 
