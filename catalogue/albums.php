@@ -88,10 +88,10 @@
             <input name="Envoyer" class="btn btn-sm btn-default" type="submit" value="Envoyer">
         </form>
         <?php
-        include 'connexionPDO.php';
+        /*include 'connexionPDO.php';
         $requete = "Select Titre_Album from Album";
         connexionPDO($requete);
-        ?>
+        */?>
     </div>
     </div>
 
