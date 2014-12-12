@@ -69,7 +69,7 @@
         <p>
             <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
         </p>
-        <form method="post" action="albums.php.php">
+        <form method="post" action="albums.php">
             <select name="album">
                 <?php
                 echo "<option selected>";
