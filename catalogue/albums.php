@@ -69,6 +69,30 @@
         <p>
             <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
         </p>
+        <form method="post" action="albums.php.php">
+            <select name="album">
+                <?php
+                echo "<option selected>";
+                echo chr(65);
+                echo "</option>";
+                $start = 66;
+                for($i = 0; $i<25;$i++)
+                {
+                    echo "<option >";
+                    echo chr($i + $start);
+                    echo "</option>";
+                }
+                ?>
+
+            </select>
+            <input name="Envoyer" class="btn btn-sm btn-default" type="submit" value="Envoyer">
+        </form>
+        <?php
+        include 'connexionPDO.php';
+        $requete = "Select Titre_Album from Album";
+        connexionPDO($requete);
+        ?>
+    </div>
     </div>
 
 </div> <!-- /container -->
