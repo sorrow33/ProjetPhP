@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Projet PhP</title>
+    <title>Projet PHP - William SIREIX et Maxime RENAUDON</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -57,7 +57,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Membres</a></li>
-                <li><a href="#">Connexion</a></li>
+                <li><a href="#">Se connecter</a></li>
 
             </ul>
         </div><!--/.nav-collapse -->
