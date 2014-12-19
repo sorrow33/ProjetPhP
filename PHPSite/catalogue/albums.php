@@ -68,47 +68,7 @@
         <p>To see the difference between static and fixed top navbars, just scroll.</p>
         <p>
             <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-        </p>
-        <form method="post" action="albums.php">
-            <select name="album">
-                <?php
-                echo "<option selected>";
-                echo chr(65);
-                echo "</option>";
-                $start = 66;
-                for($i = 0; $i<25;$i++)
-                {
-                    echo "<option >";
-                    echo chr($i + $start);
-                    echo "</option>";
-                }
-                ?>
 
-            </select>
-            <input name="Envoyer" class="btn btn-sm btn-default" type="submit" value="Envoyer">
-        </form>
-        <?php
-            if (!empty($_POST['album'])) {
-                $album = $_POST['album'];
-                echo "Vous avez choisi la lettre : $album <br>";
-                // Paramètres de connexion
-                $driver = 'sqlsrv';
-                $host = 'INFO-SIMPLET';
-                $nomDb = 'Classique';
-                $user = 'ETD';
-                $password = 'ETD';
-                // Chaîne de connexion
-                $pdodsn = "$driver:Server=$host;Database=$nomDb";
-                // Connexion PDO
-                $pdo = new PDO($pdodsn, $user, $password);
-                $requete = "SELECT Titre_Album From Album WHERE Titre_Album LIKE '$album%'";
-                foreach ($pdo->query($requete) as $row) {
-                    echo 'Nom : ' . $row['Titre_Album']. "<br>";
-                }
-                $pdo = null;
-            }
-        ?>
-    </div>
     </div>
 
 </div> <!-- /container -->
